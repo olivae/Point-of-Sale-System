@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.OrderScreen">
+    <ScrollView BackgroundColor="#41c8ff">
+        <StackLayout BackgroundColor="#41c8ff">
+            <Label x:Name="actName" HorizontalOptions="Start" FontSize="Micro"></Label>
+            <Label HorizontalOptions="Center" Text="Order Menu" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" Text="_____________________" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Start" Text="Burgers: " FontSize="Small" TextColor="Black"></Label>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Single Burger" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="burgClick" ClassId="Single Burger"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Double Burger" BackgroundColor="#ff7741" TextColor="Black"  BorderWidth=".5" Clicked="burgClick" ClassId="Double Burger"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Triple Burger" BackgroundColor="#ff7741" TextColor="Black"  BorderWidth=".5" Clicked="burgClick" ClassId="Triple Burger"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="OMG Burger" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="burgClick" ClassId="OMG Burger"></Button>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Start" Text="Chicken and Fish: " FontSize="Small" TextColor="Black"></Label>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Grilled Chicken" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="chxClick" ClassId="Grilled Chicken"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Fried Chicken" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="chxClick" ClassId="Fried Chicken"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Grilled Fish" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="chxClick" ClassId="Grilled Fish"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Fried Fish" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="chxClick" ClassId="Fried Fish"></Button>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Start" Text="Salads: " FontSize="Small" TextColor="Black"></Label>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Cobb Salad" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="salClick" ClassId="Cobb Salad"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Ceasar Salad" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="salClick" ClassId="Caesar Salad"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Garden Salad" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="salClick" ClassId="Garden Salad"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="House Salad" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="salClick" ClassId="House Salad"></Button>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Start" Text="Sides: " FontSize="Small" TextColor="Black"></Label>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="French Fries" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="sideClick" ClassId="French Fries"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Onion Rings" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="sideClick" ClassId="Onion Rings"></Button>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Start" Text="Drinks: " FontSize="Small" TextColor="Black"></Label>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Coke" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Coke"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Diet Coke" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Diet Coke"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Coke Zero" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Coke Zero"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Sprite" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Sprite"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Diet Sprite" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Diet Sprite"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Sprite Zero" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Sprite Zero"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Tea" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Tea"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Sweet Tea" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Sweet Tea"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Powerade Blue" BackgroundColor="#ff7741" TextColor="Black"  BorderColor="Black" BorderWidth=".5" Clicked="drinkClick" ClassId="Powerade"></Button>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Remove Previous Item" BackgroundColor="Red" BorderColor="Black" BorderWidth=".5" Clicked="clearItem"></Button>
+            <Button HorizontalOptions="CenterAndExpand" WidthRequest="10000" Text="Discard Order" BackgroundColor="Red" BorderColor="Black" BorderWidth=".5" Clicked="clearOrder"></Button>
+            <Label HorizontalOptions="Center" Text="_____________________" FontSize="Large" TextColor="Black"></Label>
+            
+
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <StackLayout x:Name="orderStack">
+                
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="Start" VerticalOptions="End" Text="Back"
+               Clicked="onBack" x:Name="button1">
+                </Button>
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalOptions="End" Text="Checkout"
+                Clicked="onCheckout" x:Name="button2" >
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

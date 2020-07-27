@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Card"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" >
+
+    <ScrollView BackgroundColor="#41c8ff">
+        <StackLayout BackgroundColor="#41c8ff">
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Enter Credit Card Information" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" Text="_____________________" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Entry Placeholder="Name On Card..." x:Name="cardName" MaxLength="30"/>
+            <Entry Placeholder="Card Number..." x:Name="cusNum" MaxLength="16" Keyboard="Numeric"/>
+            <Entry Placeholder="MM/YY" x:Name="cusDate" MaxLength="4" Keyboard="Numeric"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <StackLayout x:Name="test">
+                
+            </StackLayout>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="Start" VerticalOptions="End" Text="Back"
+               Clicked="onBack" x:Name="button1">
+                </Button>
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalOptions="End" Text="Complete Order"
+                Clicked="OnContinue" x:Name="button2" >
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</pages:PopupPage>

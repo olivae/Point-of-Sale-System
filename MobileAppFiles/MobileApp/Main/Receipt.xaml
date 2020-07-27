@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Receipt">
+    <ScrollView BackgroundColor="#41c8ff">
+        <StackLayout BackgroundColor="#41c8ff">
+            <Label x:Name="actName" HorizontalOptions="Start" FontSize="Micro"></Label>
+            <Label x:Name="actMail" HorizontalOptions="Start" FontSize="Micro"></Label>
+            <Label HorizontalOptions="Center" Text="Receipt" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" Text="_____________________" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" Text="Thank You for ordering with us!" FontSize="Micro"></Label>
+            <Label HorizontalOptions="Start" Text="Order: " FontSize="Small" TextColor="Black"></Label>
+            <StackLayout x:Name="listStack">
+            </StackLayout>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+
+            <StackLayout  x:Name ="payment">
+                <Label Text="" Margin="0, 10, 0,0"></Label>
+                <Label HorizontalOptions="Start" Text="Payment Type: " FontSize="Small" TextColor="Green"></Label>
+            </StackLayout>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+
+            <StackLayout x:Name="timeStack">
+                <Label HorizontalOptions="Start" Text="Estimated Pickup Time: " FontSize="Small" TextColor="Black"></Label>
+            </StackLayout>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Text="Home"
+               Clicked="onBack" x:Name="button1">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

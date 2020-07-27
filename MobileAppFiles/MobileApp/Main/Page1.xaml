@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Page1">
+
+    <StackLayout BackgroundColor="#41c8ff">
+        
+        <Label Text="Welcome, " HorizontalOptions="Center" FontSize="Large" TextColor="Black" Margin="0, 25, 0, 0"></Label>
+        <Label Text="to the POS App!" HorizontalOptions="Center" FontSize="Large" TextColor="Black" ></Label>
+            <StackLayout  Orientation="Vertical">
+                <Label Text="" Margin="0,0, 0, 30"></Label>
+            <Button HorizontalOptions="CenterAndExpand"  VerticalOptions="StartAndExpand" Text="Order Now" Clicked="onClick" BackgroundColor="#ff7741" TextColor="Black"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

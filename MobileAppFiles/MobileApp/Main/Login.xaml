@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Login">
+    <StackLayout BackgroundColor="#41c8ff">
+        <Label HorizontalOptions="Center" Text="Enter Account Login Information"></Label>
+        <Entry Placeholder="Username" x:Name="cusUName" MaxLength="25"/>
+        <Entry Placeholder="Password" x:Name="cusPass" IsPassword="True" MaxLength="25"/>
+        <StackLayout Orientation="Horizontal">
+            <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="Start" VerticalOptions="End" Text="Back"
+               Clicked="onBack" x:Name="button1">
+            </Button>
+            <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalOptions="End" Text="Continue"
+                Clicked="onContinue" x:Name="button2" >
+            </Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

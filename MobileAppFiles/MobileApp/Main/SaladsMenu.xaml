@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.salExtras"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" >
+
+    <ScrollView BackgroundColor="#41c8ff">
+        <StackLayout BackgroundColor="#41c8ff">
+            <Label x:Name="itemLabel" HorizontalOptions="Start" FontSize="Micro"></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Extras" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" Text="_____________________" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label Text="Number of Items: " HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" x:Name="sLabel"></Label>
+            <Slider Minimum="0" Maximum="5" ValueChanged="OnSliderValueChanged" x:Name="slider" MinimumTrackColor="#ff7741" ThumbColor="#ff7741"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label Text="Specify Size: " HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label FontSize="Micro" HorizontalOptions="Center" VerticalOptions="Center" Text="Small               Medium               Large "></Label>
+            <Entry Placeholder="Specify Size..." x:Name="sizeLabel" MaxLength="40"></Entry>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="Start" VerticalOptions="End" Text="Back"
+               Clicked="onBack" x:Name="button1">
+                </Button>
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalOptions="End" Text="Add More Items"
+                Clicked="onContinue" x:Name="button2" >
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</pages:PopupPage>

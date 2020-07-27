@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Checkout">
+    <ScrollView BackgroundColor="#41c8ff">
+        <StackLayout BackgroundColor="#41c8ff">
+            <Label x:Name="actName" HorizontalOptions="Start" FontSize="Micro"></Label>
+            <Label HorizontalOptions="Center" Text="Checkout" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" Text="_____________________" FontSize="Large" TextColor="Black"></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" Text="Verify all items in your cart are correct" FontSize="Micro"></Label>
+            <Label HorizontalOptions="Start" Text="Cart: " FontSize="Small" TextColor="Black"></Label>
+            <StackLayout x:Name="listStack">
+            </StackLayout>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Start" Text="Payment: " FontSize="Small" TextColor="Green"></Label>
+
+            <StackLayout  Orientation="Vertical">
+                <Label Text="" Margin="0,0, 0, 10"></Label>
+                <Button HorizontalOptions="CenterAndExpand"  VerticalOptions="StartAndExpand" Text="Credit Card" Clicked="ccClicked" WidthRequest="10000" BackgroundColor="Green"></Button>
+                <Label Margin="0, 10, 0, 0" Text="or" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black"></Label>
+                <Button Margin="0, 10, 0, 0" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Text="Pay with Cash at Restaurant" Clicked="cashClicked" WidthRequest="10000" BackgroundColor="Green"></Button>
+            </StackLayout>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text=""></Label>
+
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="Start" VerticalOptions="End" Text="Edit Order"
+               Clicked="onBack" x:Name="button3">
+                </Button>
+                <Button BackgroundColor="#ff7741" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalOptions="End" Text="Cancel Order"
+                Clicked="onCancel" x:Name="button4" >
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
